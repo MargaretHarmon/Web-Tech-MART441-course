@@ -84,9 +84,6 @@ function storyFunction(choice) {
         document.getElementById("choice1").innerHTML = "Restart?";
         document.getElementById("choice2").innerHTML = "Stay Home";
 
-    
-
-
 
     } else if (choice == 1 && answer1 == "Restart?") {
         document.getElementById("story").innerHTML = " This is my cat Slator, he is 8 months old. Slator has just seen the front door open, and gets a enticing smell of the outdoors. Are you ready to lead him through his first outdoor adventure?";

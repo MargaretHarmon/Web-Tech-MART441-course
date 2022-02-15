@@ -1,0 +1,1 @@
+Hi, This week went a lot better. I feel much more confident with variables, and comforitable with javascript. When i run my paige my computer is not displaying the jpgs. Hopefully it is just that i have a mac and macs are well kinda dum. But hopefully you can see them.

@@ -1,0 +1,86 @@
+<html>
+<style>
+     body{
+        background-color: rgb(154, 198, 240);
+        }
+</style>
+ <script>
+function getChoice1()
+        {
+            var myChoice = document.getElementById("choice").value;
+            var myQuestion = document.getElementById("question");
+            if(myChoice === "Black")
+            {document.getElementById("choice").style.display="none";
+            document.getElementById("btnSubmit").style.display="none";
+            document.getElementById("mainImage").src = "FreshSnow.jpg"
+            document.getElementById("choice2").style.display="block";
+            document.getElementById("btnSubmit2").style.display="block";
+                myQuestion.innerHTML = "Your friends took some tumbles, but AMAZING CHOICE. You have stumbled upon fresh snow, the group is so excited. Do you go into the untrecked teritory? ";
+            }
+            else if(myChoice === "Green")
+            {
+            document.getElementById("choice").style.display="none";
+            document.getElementById("btnSubmit").style.display="none";
+            document.getElementById("mainImage").src = "WarmingHut.jpg"
+            document.getElementById("choice3").style.display="block";
+            document.getElementById("btnSubmit3").style.display="block";
+                myQuestion.innerHTML = "Nobody was ingured, and evrybody got to shake of some rust and get some nervs out. On your run you stumble upon a beatiful lookout warming hut. Do you go in?";
+            
+            }
+            else
+            { myQuestion.innerHTML = "That was not a option, choose one of the two choices. Thanks:)";}
+ function getChoice3()
+        {
+            var answer = document.getElementById("choice3").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "yes")
+            {
+            document.getElementById("mainImage").src = "together.jpg"
+            myQuestion.innerHTML = "Inside is a beautiful lookout, and warm hot chocolate. You and your friends play some cards and take a nice break.";
+            }
+            else if(answer === "no")
+            {  myQuestion.innerHTML = "Thats very lame of you, i guess you like cold apendages";  }
+        }
+        }
+function getChoice2()
+        {
+            var answer = document.getElementById("choice2").value;
+            var myQuestion = document.getElementById("question");
+            if(answer === "yes")
+            {
+            document.getElementById("mainImage").src = "HotChocolate.jpg"
+            myQuestion.innerHTML = "The powder was amazing, you had the time of your life. Your frind Taylor feel and snowballed down the mountain. Shes a little emberrased but overall fun run.";
+            }
+            else if(answer === "no")
+            { myQuestion.innerHTML = "Hike back out and take the green....Wimp.";}
+        }
+
+
+</script>
+<body>
+
+ <h1>Snow Day at Snowbowl</h1>
+<br>
+<img src="Snowbowl.jpg" id="FirstImage">
+<div id="question">
+<br>
+       Its a sunny Saturday in Missoula Montana, and today you get to go Ski! 
+        <br>
+        It is your job to lead you and your friends on the best Ski Day yet, once at the top of the lift you are faced with the first decision as leader...
+        <br>
+       Take the fun and adventous black diamond westbowl, or an easy green run to let everyone get warmed up.
+    </div>
+    <img src="BlackDiamond.jpg" id="mainImage">
+    <img src="Easiest.jpg" id="mainImage">
+       
+<br>
+<input type="text" size="40" id="choice" value="Enter Black or Green">
+<button id="btnSubmit" onclick="getChoice1();">Click to continue</button>
+
+<input type="text" size="30" id="choice2" value="Enter yes or no." style="display:none">
+<button id="btnSubmit2" onclick="getChoice2();"  style="display:none">Click to continue</button>
+
+<input type="text" size="30" id="choice3" value="Enter yes or no."  style="display:none">
+<button id="btnSubmit3" onclick="getChoice3();" style="display:none">Click to continue</button>
+</body>
+</html>

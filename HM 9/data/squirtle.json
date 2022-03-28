@@ -1,0 +1,19 @@
+{
+  "name" : "squirtle",
+  "img": "http://www.serebii.net/pokemongo/pokemon/007.png",
+  "info" : {
+      "type" : "Water",
+      "height": "0.51 m",
+      "weight": "9.0 kg",
+      "candy": "Squirtle Candy",
+      "candy_count": 25,
+      "egg": "2 km",
+      "spawn_chance": 0.58,
+      "avg_spawns": 58,
+      "spawn_time": "04:25",
+      "weaknesses": "Electric, Grass",
+      "evolution": "Blastoise, Wartortle"
+  }}
+ 
+
+   

@@ -1,0 +1,22 @@
+ #square {
+      width: 100px;
+      height: 100px;
+      background: rgb(243, 166, 98);
+      position: absolute;
+      left: 0;
+      top: 400;
+    }
+
+    .stuff{
+      background: rgb(120, 120, 243);
+      color:white;
+    }
+
+    #third{
+      background: rgb(66, 114, 66);
+      color:white;
+    }
+
+    body{
+        background-color: rgb(245, 188, 114);
+    }

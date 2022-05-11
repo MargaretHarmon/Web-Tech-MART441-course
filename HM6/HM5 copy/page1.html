@@ -1,0 +1,38 @@
+<head>
+    <title>
+        JSON FTW
+    </title>
+    <script src="scripts/main.js"></script>
+    <script>
+        function getInformation()
+        {
+            var information = {"firstname":"", "lastname":"", "age":"", "score":""};
+            localStorage.setItem("information", JSON.stringify(information));
+        }
+        
+        function goNextPage()
+        {
+            var firstName = document.getElementById("FirstName").value;
+            var lastName = document.getElementById("LastName").value;
+            var age = document.getElementById("age").value;
+            player.firstName=firstName
+            player.lastName=lastName
+            player.age=age
+            localStorage.setItem("player", JSON.stringify(player));
+            console.log(firstName)
+            window.location = "index.html";
+        }
+    </script>
+</head>
+<body onload="getInformation();">
+    <div id="info"></div>
+    <br>
+    first name <input type="text" id="FirstName">
+    <br>
+    Last name <input type="text" id="LastName">
+    <br>
+    Age<input type="age" id="age">
+    <br>
+    <button id="btnSubmit" onclick="goNextPage();">Go to Next Page</button>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>
+            Array Push
+        </title>
+        <script>
+            function setInformation()
+            {   
+                var information = new Array();
+
+                information.push("Item 1");
+                information.push("Item 2");
+                information.push("Item 3");
+                information.push("Item 4");
+                information.push("Item 5");
+                information.push("Item 6");
+                information.push("Item 7");
+                information.push("Item 8");
+                information.push("Item 9");
+                information.push("Item 10");
+                
+                document.getElementById("info").innerHTML = information[0];
+            }
+        </script>
+    </head>
+    <body onload="setInformation();">
+        <div style="font-size: 24px" id="info"></div>
+        <br>  
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            JSON
+        </title>
+        <script>
+function setInformation()
+{
+
+function addToPlayer()
+{
+    var firstName = document.getElementById("txtFirstName").value;
+    player.firstname = firstName;
+    localStorage.setItem("playerInfo", JSON.stringify(player));
+    window.location = "index.html";
+}
+
+function playerInfo()
+{
+    var playerInformation = localStorage.getItem("playerInfo");
+    player = JSON.parse(playerInformation);
+    console.log(player.firstname);
+   
+}  }
+    </script>
+    </head>
+    <body onload="setInformation();">
+        <div id="info"></div>
+        <br>
+    </body>
+</html>
